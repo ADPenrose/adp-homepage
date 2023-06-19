@@ -34,7 +34,7 @@ const Home = () => (
         mb={6}
         p={3}
         textAlign="center"
-        bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.300')}
+        bg={useColorModeValue('yellow.400', 'purple.300')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
         Hi! I&apos;m an Industrial Engineer based in Mexico that loves programming, electronics
@@ -99,7 +99,7 @@ const Home = () => (
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="/works"
+            href="/my_work"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
