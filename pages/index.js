@@ -18,8 +18,9 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbTwitch from '../public/images/links/twitch.png'
+import thumbMedium from '../public/images/links/medium.png'
+import thumbKofi from '../public/images/links/kofi.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -114,87 +115,102 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2019</BioYear>
+          Began studying Industrial Engineering at FESC UNAM.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2020</BioYear>
+          Started working as a tutor for mathematic-related courses.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2020</BioYear>
+          Imparted a Software-aided Linear Algebra crash course at FESC UNAM.
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>2020</BioYear>
+          Participated in both parts of the VII Encuentro SUMEM: La mejora de la
+          educación matemática, una actividad estrictamente creciente.
         </BioSection>
+        <BioSection>
+          <BioYear>2021 to present</BioYear>
+          Working as a freelance electronics designer. 
+        </BioSection>
+        <BioSection>
+          <BioYear>2023 to present</BioYear>
+          Working as an Automation & Sustainability Trainee at ECOLAB.
+          </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          What I ♥ doing
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          Physics, Playing Piano, Streaming, Gymnastics/Sports in general,
+          studying/teaching mathematics.
         </Paragraph>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          My socials
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/adpenrose" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="pink"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @adpenrose
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="https://instagram.com/adepenrose" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="pink"
                 leftIcon={<IoLogoInstagram />}
               >
-                @craftzdog
+                @adepenrose
               </Button>
             </Link>
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <SimpleGrid columns={[1, 2, 3]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
+            href="https://www.twitch.tv/adpenrose"
+            title="ADPenrose"
+            thumbnail={thumbTwitch}
           >
-            My YouTube channel (&gt;150k subs)
+            My Twitch channel.
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
+            href="https://adpenrose.medium.com"
+            title="Medium"
+            thumbnail={thumbMedium}
           >
-            A Markdown note-taking app
+            My hardware/design-focused electronics blog.
+          </GridItem>
+          <GridItem
+            href="https://ko-fi.com/adpenrose"
+            title="Ko-Fi"
+            thumbnail={thumbKofi}
+          >
+            A place to support me (only if you want to).
           </GridItem>
         </SimpleGrid>
+
+        <Box align="center" my={4}>
+          <NextLink href="/posts" passHref scroll={false}>
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
+              Popular posts
+            </Button>
+          </NextLink>
+        </Box>
       </Section>
     </Container>
   </Layout>
