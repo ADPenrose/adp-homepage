@@ -1,12 +1,12 @@
-# Takuya's Homepage
+# Arturo's Homepage
 
-[https://www.craftz.dog/](https://www.craftz.dog/)
+[![Thumbnail](./doc/thumb.png)](https://adph.vercel.app)
 
 ## Tutorial
 
-Watch how I built this website on YouTube:
+Watch how Takuya built his version of the website on YouTube:
 
-[![YouTube thumbnail](./doc/thumb.png)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
+[![YouTube thumbnail](./doc/thumbtak.png)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
 
 ## Stack
 
@@ -33,15 +33,15 @@ $PROJECT_ROOT
 
 MIT License.
 
-You can create your own homepage for free without notifying me by forking this project under the following conditions:
+You can create your own homepage for free by forking Takuya's original project under the following conditions:
 
-- Add a link to [my homepage](https://www.craftz.dog/)
+- Add a link to [his homepage](https://www.craftz.dog/)
 - Do not use the 3d voxel dog
 
 Check out [LICENSE](./LICENSE) for more detail.
 
 ---
 
-Looking for a Markdown note-taking app? Check out my app called Inkdrop:
+Looking for a Markdown note-taking app? Check out Takuya's app called Inkdrop:
 
 [![Inkdrop](https://github.com/craftzdog/dotfiles-public/raw/master/images/inkdrop.png)](https://www.inkdrop.app/)
