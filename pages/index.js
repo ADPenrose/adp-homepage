@@ -11,13 +11,13 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -34,18 +34,19 @@ const Home = () => (
         mb={6}
         p={3}
         textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.300')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        Hi! I&apos;m an Industrial Engineer based in Mexico that loves programming, electronics
+        and maths!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Arturo Avila
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Industrial Engineer / Keyboard Designer / Developer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -64,7 +65,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/arturo.png"
               alt="Profile image"
               borderRadius="full"
               width="100"
@@ -76,29 +77,24 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          My Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
+          I&apos;m a freelance mechanical keyboard and electronics designer
+          based in Mexico, with a deep pasion for programming, mathematics and
+          administration. I&apos;m currently studying Industrial Engineering at
+          UNAM, and I use my spare time to learn programming and develop printed
+          circuit boards for custom mechanical keyboards. I market my products
+          through content published on{' '}
+          <Link as={NextLink} href="https://www.twitch.tv/adpenrose" passHref target="_blank">
+            Twitch
           </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
+          , where I show my workflow for the design, programming and testing
+          processes for consumer electronics, and through pictures on{' '}
+          <Link as={NextLink} href="https://www.instagram.com/adepenrose/" passHref target="_blank">
+            Instagram
           </Link>
-          &quot; has more than 100k subscribers.
+          .
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -171,28 +167,6 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
             <Link href="https://instagram.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
@@ -221,26 +195,6 @@ const Home = () => (
             A Markdown note-taking app
           </GridItem>
         </SimpleGrid>
-
-        <Heading as="h3" variant="section-title">
-          Newsletter
-        </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p>
-
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-            Sign up my newsletter here
-          </Button>
-        </Box>
       </Section>
     </Container>
   </Layout>
