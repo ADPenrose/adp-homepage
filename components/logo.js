@@ -22,21 +22,21 @@ const LogoBox = styled.span`
 
 const Logo = () => {
   return (
-    <Link href="/" scroll={false}>
-      <a>
-        <LogoBox>
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
-            ml={3}
-          >
-            Arturo Avila
-          </Text>
-        </LogoBox>
-      </a>
-    </Link>
-  )
+    (<Link href="/" scroll={false}>
+
+      <LogoBox>
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily='M PLUS Rounded 1c", sans-serif'
+          fontWeight="bold"
+          ml={3}
+        >
+          Arturo Avila
+        </Text>
+      </LogoBox>
+
+    </Link>)
+  );
 }
 
 export default Logo
