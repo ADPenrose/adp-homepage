@@ -3,60 +3,70 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import thumbKint from '../public/images/projects/kintsugi.png'
+import thumbObi from '../public/images/projects/obi.png'
+import thumbShi from '../public/images/projects/shisaku.png'
+import thumbAkemi from '../public/images/projects/akemi.png'
+import thumbTester from '../public/images/projects/sctester.png'
+import thumbDot from '../public/images/projects/dotfiles.png'
+import thumbAZ900 from '../public/images/projects/az900.png'
+import thumbPiano from '../public/images/projects/piano.png'
 
 const Works = () => (
-  <Layout title="Works">
+  <Layout title="My Work">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem
+            id="kintsugi_v1"
+            title="Kintsugi v1"
+            thumbnail={thumbKint}
+          >
+            A 65%-ish keyboard with some extra features.
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
-          >
-            Music recommendation app for iOS
+          <WorkGridItem id="obi_v1" title="Obi v1" thumbnail={thumbObi}>
+            A 40% keyboard, with options for (very few) multiple layouts.
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
-          <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
-          >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+          <WorkGridItem id="shisaku_v1" title="Shisaku V1" thumbnail={thumbShi}>
+            A 40% alice-like keyboard, built using only THT components.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+          <WorkGridItem
+            id="akemipad_v1"
+            thumbnail={thumbAkemi}
+            title="AkemiPad v1"
+          >
+            A numpad designed to be the perfect companion to any keyboard.
+          </WorkGridItem>
+        </Section>
+
+        <Section delay={0.2}>
+          <WorkGridItem id="dotfiles" thumbnail={thumbDot} title="Dotfiles">
+            My personal dotfiles for Oh-My-Zsh (Linux) and Powershell (Windows).
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.2}>
+          <WorkGridItem
+            id="midi_piano"
+            thumbnail={thumbPiano}
+            title="MIDI Piano"
+          >
+            DIY MIDI piano, powered by an Arduino UNO.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
 
-      <Section delay={0.2}>
+      <Section delay={0.3}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
@@ -65,55 +75,22 @@ const Works = () => (
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.3}>
-          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
-            A website of the elite app development and contracting agency based
-            in Austria
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.3}>
+        <Section delay={0.4}>
           <WorkGridItem
-            id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
+            id="sctester"
+            thumbnail={thumbTester}
+            title="SC stabilizers tester"
           >
-            The mode magazine for understanding to personally enjoy Japan
+            An FR4 tester for keyboard stabilizers, commisioned by Switch Club.
           </WorkGridItem>
         </Section>
-        <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.4}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Old works
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.5}>
+        <Section delay={0.4}>
           <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
+            id="az900_guide"
+            thumbnail={thumbAZ900}
+            title="Guide for the AZ-900 certification"
           >
-            Automatic audio file tagging tool using FreeDB for Windows
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
+            Collaborator of an official study guide for the AZ-900 Microsoft Fundamentals certification.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
